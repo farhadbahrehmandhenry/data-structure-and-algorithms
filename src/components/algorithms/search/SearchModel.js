@@ -9,7 +9,7 @@ const SearchModel = (props) => {
   var [value, setValue] = useState(null);
 
   return (
-    <div className='sort-model-container'>
+    <div className='search-model-container'>
       {props.hint && <h4>{props.hint}</h4>}
       <Form>
         <Form.Field>

@@ -5,6 +5,7 @@ import {topics} from '../../topics';
 import Container from '../container/Container.js';
 import Bubble from '../algorithms/sort/bubble/Bubble';
 import Binary from '../algorithms/search/binary/Binary';
+import Anagram from '../problemSolvingPattern/frequency/Anagram';
 
 import 'semantic-ui-css/semantic.min.css'
 import './App.css';
@@ -32,11 +33,12 @@ function App() {
           <Route path='/dataStructure' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/algorithms' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/sort' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
-          <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
-          <Route path='/problemSolvingPattern' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/bubble' component={Bubble}/>
+          <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/binary' component={Binary}/>
-
+          <Route path='/problemSolvingPattern' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/frequency' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/anagram' component={Anagram}/>
         </Switch>
       </div>
     </Router>
