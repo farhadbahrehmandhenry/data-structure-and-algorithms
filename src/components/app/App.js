@@ -33,6 +33,7 @@ function App() {
           <Route path='/algorithms' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/sort' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/problemSolvingPattern' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/bubble' component={Bubble}/>
           <Route path='/binary' component={Binary}/>
 

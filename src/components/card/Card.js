@@ -16,7 +16,7 @@ const Card = (props) => {
 
   return (
     <div className='card' onClick={() => onCardClick({topic: title})}>
-      <h3>{title}</h3>
+      <h3 className='card-header'>{title}</h3>
     </div>
   )
 }
