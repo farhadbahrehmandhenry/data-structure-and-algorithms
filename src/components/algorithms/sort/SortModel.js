@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Form, Segment} from 'semantic-ui-react'
+import _ from 'lodash';
 
 import './SortModel.css';
 
@@ -11,7 +12,7 @@ const SortModel = (props) => {
       <Form>
         <Form.Field>
           <label>ints to sort (like 1, 2, 3)</label>
-          <input placeholder='nums...' onChange={(event) => setArray(event.target.value)}/>
+          <input placeholder='nums...' onChange={(event) => setArray(_.map(event.target.value.split(','), num => Number.parseInt(num)))}/>
         </Form.Field>
         <Button type='submit' onClick={() => props.onSort(array)}>Sort</Button>
       </Form>

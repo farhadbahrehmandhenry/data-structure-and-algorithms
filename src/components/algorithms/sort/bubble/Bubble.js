@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import _ from 'lodash';
 import {swap} from '../../../../functions';
 import SortModel from '../SortModel.js';
 
@@ -7,7 +6,7 @@ const Bubble = () => {
   var [sortedArray, setSortedArry] = useState([]);
 
   const handleSort = (array) => {
-    var nums = _.map(array.split(','), num => Number.parseInt(num));
+    var nums = array;
     var length = nums.length;
 
     for (var i = 0; i < length; i++) {
