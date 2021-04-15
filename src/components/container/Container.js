@@ -6,13 +6,11 @@ import Card from '../card/Card';
 import './Container.css';
 
 const Container = (props) => {
-  var {pathname} = props.location;
-  var topic =  _.find(topics, topic => topic.path === pathname);
-  var titles = topic.key === 'All Topics' ? _.filter(_.map(topics, 'key'), title => title !== 'All Topics') : topic.items;
-
   return (
     <div className='container'>
-      {_.map(titles, title => (<Card title={title}/>))}
+      {_.map(props.children, title => {
+        return <Card key={title} title={title} onCardClick={(location) => props.onRouteChange(location)}/>
+      })}
     </div>
   )
 }

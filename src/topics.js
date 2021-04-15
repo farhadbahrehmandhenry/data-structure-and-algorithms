@@ -1,5 +1,5 @@
 export const topics = [
-  {key: 'All Topics', items: [], path: '/home'},
-  {key: 'Data Structure', items: ['a', 'b'], path: '/dataStructure'},
-  {key: 'Algorithms', items: ['c', 'd'], path: '/algorithms'}
+  {key: 'home', children: {}},
+  {key: 'dataStructure', children: {a: ['a', 'b']}},
+  {key: 'algorithms', children: {search: ['c'], sort: ['bubble', 'insertion']}}
 ];
