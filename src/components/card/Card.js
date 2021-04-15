@@ -10,7 +10,7 @@ const Card = (props) => {
 
   const onCardClick = ({topic}) => {
     history.push('/' + _.camelCase(topic));
-    console.log('ppp', props)
+
     props.onCardClick(topic)
   }
 

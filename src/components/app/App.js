@@ -3,8 +3,9 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import _ from 'lodash';
 import {topics} from '../../topics';
 import Container from '../container/Container.js';
-import SortModel from '../algorithms/sort/SortModel';
+import Bubble from '../algorithms/sort/bubble/Bubble';
 
+import 'semantic-ui-css/semantic.min.css'
 import './App.css';
 
 function App(props) {
@@ -19,7 +20,7 @@ function App(props) {
     mainTopics = _.find(_.map(topics, 'children'), child => _.keys(child).includes(`${location}`))[`${location}`];
   }
   else {
-    
+
   }
 
   return (
@@ -30,7 +31,7 @@ function App(props) {
           <Route path='/dataStructure' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/algorithms' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/sort' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
-          <Route path='/bubble' component={SortModel}/>
+          <Route path='/bubble' component={Bubble}/>
         </Switch>
       </div>
     </Router>

@@ -1,6 +1,5 @@
 import React from 'react';
 import _ from 'lodash';
-import {topics} from '../../topics';
 import Card from '../card/Card';
 
 import './Container.css';
