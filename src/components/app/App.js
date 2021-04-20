@@ -5,6 +5,7 @@ import {topics} from '../../topics';
 import Container from '../container/Container.js';
 import Bubble from '../algorithms/sort/bubble/Bubble';
 import Binary from '../algorithms/search/binary/Binary';
+import Linear from '../algorithms/search/linear/Linear';
 import Anagram from '../problemSolvingPattern/frequency/Anagram';
 
 import 'semantic-ui-css/semantic.min.css'
@@ -36,6 +37,7 @@ function App() {
           <Route path='/bubble' component={Bubble}/>
           <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/binary' component={Binary}/>
+          <Route path='/linear' component={Linear}/>
           <Route path='/problemSolvingPattern' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/frequency' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/anagram' component={Anagram}/>
