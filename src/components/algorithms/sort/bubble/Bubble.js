@@ -6,18 +6,22 @@ const Bubble = () => {
   var [sortedArray, setSortedArry] = useState([]);
 
   const handleSort = (array) => {
-    var nums = array;
-    var length = nums.length;
+    var noSwaps;
 
-    for (var i = 0; i < length; i++) {
-      for (var j = 0; j < length - 1 - i; j++) {
-        if (nums[j] > nums[j+1]) {
-          nums = swap(nums, j, j+1);
+    for (var i = array.length; i > 0; i--) {
+      noSwaps = true;
+
+      for (var j = 0; j < i - 1; j++) {
+        if (array[j] > array[j+1]) {
+          array = swap(array, j, j+1);
+          noSwaps = false;
         }
       }
+
+      if (noSwaps) break;
     }
 
-    setSortedArry(nums)
+    setSortedArry(array)
   }
 
   return <SortModel onSort={(array) => handleSort(array)} sortedArray={sortedArray}/>
