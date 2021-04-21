@@ -9,6 +9,7 @@ const SortModel = (props) => {
 
   return (
     <div className='sort-model-container'>
+      {props.hint && <h4>{props.hint}</h4>}
       <Form>
         <Form.Field>
           <label>ints to sort (like 1, 2, 3)</label>

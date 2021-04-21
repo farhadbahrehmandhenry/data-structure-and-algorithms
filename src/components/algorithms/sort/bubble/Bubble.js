@@ -13,7 +13,7 @@ const Bubble = () => {
 
       for (var j = 0; j < i - 1; j++) {
         if (array[j] > array[j+1]) {
-          array = swap(array, j, j+1);
+          [array[j], array[j+1]] = [array[j+1], array[j]];
           noSwaps = false;
         }
       }
@@ -24,7 +24,13 @@ const Bubble = () => {
     setSortedArry(array)
   }
 
-  return <SortModel onSort={(array) => handleSort(array)} sortedArray={sortedArray}/>
+  return (
+    <SortModel 
+      onSort={(array) => handleSort(array)} 
+      sortedArray={sortedArray}
+      hint='compare nums two by to and swap them until largest bubbles at the end'
+    />
+  );
 }
 
 export default Bubble;
