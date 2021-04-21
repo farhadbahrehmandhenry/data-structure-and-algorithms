@@ -12,3 +12,16 @@
 // best O(n)
 // worst O(n^2)
 // average O(n^2)
+// space O(1)
+
+// selection sort
+// best O(n^2)
+// worst O(n^2)
+// average O(n^2)
+// space O(1)
+
+// insertion sort
+// best O(n)
+// worst O(n^2)
+// average O(n^2)
+// space O(1)

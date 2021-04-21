@@ -4,6 +4,7 @@ import _ from 'lodash';
 import {topics} from '../../topics';
 import Container from '../container/Container.js';
 import Bubble from '../algorithms/sort/bubble/Bubble';
+import Insertion from '../algorithms/sort/insertion/Insertion';
 import Selection from '../algorithms/sort/selection/Selection';
 import Binary from '../algorithms/search/binary/Binary';
 import Linear from '../algorithms/search/linear/Linear';
@@ -37,6 +38,7 @@ function App() {
           <Route path='/sort' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/bubble' component={Bubble}/>
           <Route path='/selection' component={Selection}/>
+          <Route path='/insertion' component={Insertion}/>
           <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/binary' component={Binary}/>
           <Route path='/linear' component={Linear}/>
