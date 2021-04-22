@@ -13,6 +13,7 @@ const Insertion = () => {
       }
   
       // insert in correct place - j is the one that is not greater than currentVal so we put j+1
+      // we can access j here because of block scope and var.
       array[j+1] = currentVal;
     }
 

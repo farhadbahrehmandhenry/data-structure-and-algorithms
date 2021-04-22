@@ -4,5 +4,5 @@ export const topics = [
   {key: 'algorithms', children: {search: ['linear', 'binary'], sort: ['bubble', 'insertion', 'selection']}},
   {key: 'recursion', children: {}},
   {key: 'bigO', children: {}},
-  {key: 'problemSolvingPattern', children: {frequency: ['anagram'], multiplePointer: [], slidingWindow: [], divideAndConquer: []}}
+  {key: 'problemSolvingPattern', children: {frequency: ['anagram'], multiplePointer: [], slidingWindow: [], divideAndConquer: [], backTracking: ['parantheses']}}
 ];

@@ -9,6 +9,7 @@ import Selection from '../algorithms/sort/selection/Selection';
 import Binary from '../algorithms/search/binary/Binary';
 import Linear from '../algorithms/search/linear/Linear';
 import Anagram from '../problemSolvingPattern/frequency/Anagram';
+import Parantheses from '../problemSolvingPattern/backTracking/Parantheses.js';
 
 import 'semantic-ui-css/semantic.min.css'
 import './App.css';
@@ -45,6 +46,8 @@ function App() {
           <Route path='/problemSolvingPattern' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/frequency' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/anagram' component={Anagram}/>
+          <Route path='/backTracking' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/Parantheses' component={Parantheses}/>
         </Switch>
       </div>
     </Router>
