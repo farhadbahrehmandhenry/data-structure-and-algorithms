@@ -6,6 +6,9 @@ import Container from '../container/Container.js';
 import Bubble from '../algorithms/sort/bubble/Bubble';
 import Insertion from '../algorithms/sort/insertion/Insertion';
 import Selection from '../algorithms/sort/selection/Selection';
+import Merge from '../algorithms/sort/merge/Merge';
+import Quick from '../algorithms/sort/quick/Quick';
+import Radix from '../algorithms/sort/radix/Radix';
 import Binary from '../algorithms/search/binary/Binary';
 import Linear from '../algorithms/search/linear/Linear';
 import Anagram from '../problemSolvingPattern/frequency/Anagram';
@@ -40,6 +43,9 @@ function App() {
           <Route path='/bubble' component={Bubble}/>
           <Route path='/selection' component={Selection}/>
           <Route path='/insertion' component={Insertion}/>
+          <Route path='/merge' component={Merge}/>
+          <Route path='/quick' component={Quick}/>
+          <Route path='/radix' component={Radix}/>
           <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/binary' component={Binary}/>
           <Route path='/linear' component={Linear}/>
