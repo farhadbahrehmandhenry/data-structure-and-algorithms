@@ -24,7 +24,7 @@ const Insertion = () => {
     <SortModel 
       onSort={(array) => handleSort(array)} 
       sortedArray={sortedArray}
-      hint=''
+      hint='from begining, for each element, INSERT it on correct place on its left side'
     />
   );
 }

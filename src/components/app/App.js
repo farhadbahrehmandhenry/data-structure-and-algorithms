@@ -3,6 +3,12 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import _ from 'lodash';
 import {topics} from '../../topics';
 import Container from '../container/Container.js';
+import SinglyLinkedLIst from '../data-structure/singlyLinkedList/SinglyLinkedList';
+import DoublyLinkedLIst from '../data-structure/doublyLinkedList/DoublyLinkedList';
+import Stack from '../data-structure/stack/Stack';
+import Queue from '../data-structure/queue/Queue';
+import BinarySearchTree from '../data-structure/binarySearchTree/BinarySearchTree';
+import BinaryTree from '../data-structure/binaryTree/BinaryTree';
 import Bubble from '../algorithms/sort/bubble/Bubble';
 import Insertion from '../algorithms/sort/insertion/Insertion';
 import Selection from '../algorithms/sort/selection/Selection';
@@ -11,6 +17,8 @@ import Quick from '../algorithms/sort/quick/Quick';
 import Radix from '../algorithms/sort/radix/Radix';
 import Binary from '../algorithms/search/binary/Binary';
 import Linear from '../algorithms/search/linear/Linear';
+import BreadthFirstSearch from '../algorithms/search/breadthFirstSearch/BreadthFirstSearch';
+import DepthFirstSearch from '../algorithms/search/depthFirstSearch/DepthFirstSearch';
 import Anagram from '../problemSolvingPattern/frequency/Anagram';
 import Parantheses from '../problemSolvingPattern/backTracking/Parantheses.js';
 
@@ -38,6 +46,15 @@ function App() {
         <Switch>
           <Route path='/home' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/dataStructure' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/lists' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/singlyLinkedLIst' component={SinglyLinkedLIst}/>
+          <Route path='/doublyLinkedLIst' component={DoublyLinkedLIst}/>
+          <Route path='/collections' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/stack' component={Stack}/>
+          <Route path='/queue' component={Queue}/>
+          <Route path='/trees' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
+          <Route path='/binarySearchTree' component={BinarySearchTree}/>
+          <Route path='/binaryTree' component={BinaryTree}/>
           <Route path='/algorithms' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/sort' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/bubble' component={Bubble}/>
@@ -49,6 +66,8 @@ function App() {
           <Route path='/search' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/binary' component={Binary}/>
           <Route path='/linear' component={Linear}/>
+          <Route path='/breadthFirstSearch' component={BreadthFirstSearch}/>
+          <Route path='/depthFirstSearch' component={DepthFirstSearch}/>
           <Route path='/problemSolvingPattern' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/frequency' render={() => <Container onRouteChange={(location) => setLocation(location)} children={mainTopics}/>}/>
           <Route path='/anagram' component={Anagram}/>

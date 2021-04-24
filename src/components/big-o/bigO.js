@@ -16,19 +16,19 @@
 // best O(n)
 // worst O(n^2)
 // average O(n^2)
-// space O(1)
-
-// selection sort
-// best O(n^2)
-// worst O(n^2)
-// average O(n^2)
-// space O(1)
+// space O(1) => it's done in place without any auxilary data structure
 
 // insertion sort
 // best O(n)
 // worst O(n^2)
 // average O(n^2)
-// space O(1)
+// space O(1) => it's done in place without any auxilary data structure
+
+// selection sort
+// best O(n^2)
+// worst O(n^2)
+// average O(n^2)
+// space O(1) => it's done in place without any auxilary data structure
 
 // merge sort
 // best O(nlogn) => logn is for spliting the array to get the smallest array log 32 = 5(splitting) //// and merge has O(n)
@@ -42,5 +42,26 @@
 // worst O(n) => if data is already sorted
 // space O(logn)
 
+// radix sort
+// best O(nk) => n number of nums, k max number of digits in num
+// average O(nk)
+// worst O(nk) 
+// space O(n+k)
+/////////////////////////////////////////
+
+// stack
+// insertion O(1)
+// removal O(1)
+// searching O(N)
+// access O(N)
+
+// queue
+// insertion O(1)
+// removal O(1)
+// searching O(N)
+// access O(N)
 
 /////////////////////////////////////////
+// binarySearchTree
+// insertion O(logn)
+// searching O(logn)
