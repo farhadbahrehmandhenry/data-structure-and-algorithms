@@ -65,3 +65,15 @@
 // binarySearchTree
 // insertion O(logn)
 // searching O(logn)
+
+/////////////////////////////////////////
+// hashTable
+// insertion O(1)
+// deletion O(1)
+// access O(1)
+
+/////////////////////////////////////////
+// hashTable
+// insertion O(logn)
+// deletion O(logn)
+// access O(n)

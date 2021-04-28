@@ -7,8 +7,10 @@ export const topics = [
     key: 'dataStructure', 
     children: {
       lists: ['singlyLinkedList', 'doublyLinkedList'], 
+      tables: ['hashTable'], 
       collections: ['stack', 'queue'],
-      trees: ['binaryTree', 'binarySearchTree']
+      trees: ['binaryTree', 'binarySearchTree', 'binaryHeap'],
+      graph: ['graph']
     } 
   },
   {
